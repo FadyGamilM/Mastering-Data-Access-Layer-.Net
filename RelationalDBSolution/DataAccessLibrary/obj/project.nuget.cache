@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SKD6PiQJXhJFG6bEEbq6bBj0FRhYv4HMnLQkKVHNQck5nVOdE/KIuZy0mj/+lY4M7SNsrfab4wSwV0TEhl8dtQ==",
+  "dgSpecHash": "rT+6BEO9SAkPqa53FBkg2fjPdCfB6cBiVaNz4NR4CAhcOgZYqKLTXZ1uqVk0ZuDLTYRl25YtsVFvE+XIhZ+xsw==",
   "success": true,
   "projectFilePath": "E:\\1- freelancing path\\Practical Work After Courses\\Mastering-Data-Access-Layer-.Net\\RelationalDBSolution\\DataAccessLibrary\\DataAccessLibrary.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\vip\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
     "C:\\Users\\vip\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
