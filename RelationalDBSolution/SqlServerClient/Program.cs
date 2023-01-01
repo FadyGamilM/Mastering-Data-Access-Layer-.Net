@@ -1,4 +1,5 @@
 ﻿using DataAccessLibrary;
+using DataAccessLibrary.Models;
 using Microsoft.Extensions.Configuration;
 
 
@@ -50,10 +51,72 @@ void ReadContactDetails(SqlCRUD CrudService, int ContactId)
     }
 }
 
+
+// Method that create a complete contact info details object
+ContactInfoDetails ContactInfoFactory()
+{
+    var contactDetails = new ContactInfoDetails();
+    contactDetails.basicContactInfo = new BasicContactInfo
+    {
+        FirstName = "peter",
+        LastName = "gamil"
+    };
+
+    // newly created email [because it doesn't has an id]
+    contactDetails.Emails.Add(new EmailAddress { Email="peter@mail.com"});
+
+    // old selected email from the frontend [because it sent with its id]
+    contactDetails.Emails.Add(new EmailAddress { Id = 4, Email = "frontendTeam@mail.com" });
+
+    // newly created phone number by the user [no id]
+    contactDetails.PhoneNumbers.Add(new PhoneNumber { Phone = "01201095076" });
+    
+    // selected phone number by the user [with id from frontend]
+    contactDetails.PhoneNumbers.Add(new PhoneNumber { Id=1, Phone = "01283233951" });
+
+    return contactDetails;
+}
+
+BasicContactInfo BasicContactInfoFactory()
+{
+    var contactInfo = new BasicContactInfo
+    {
+        Id = 1,
+        FirstName = "Fady",
+        LastName = "Gamil"
+    };
+    return contactInfo;
+}
+
+// method to create a new entitiy
+void CreateContactInfoDetails(SqlCRUD sqlCrud)
+{
+    var contactDetails = ContactInfoFactory();
+
+    try
+    {
+        sqlCrud.CreateNewContact(contactDetails);
+
+        Console.WriteLine("Created Successfully");
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+}
+
+
 // now use the application layer
 var sqlCrudService = new SqlCRUD(GetConnString());
 Console.WriteLine("################# Read All Contacts Basic Info #################");
 ReadContactsInfo(sqlCrudService);
+
 Console.WriteLine("\n \n");
+
 Console.WriteLine("################# Read Contact Details given the contact id #################");
 ReadContactDetails(sqlCrudService, 1);
+
+Console.WriteLine("\n \n");
+
+Console.WriteLine("################# Create Contact Details entitiy #################");
+CreateContactInfoDetails(sqlCrudService);

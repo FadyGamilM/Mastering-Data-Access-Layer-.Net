@@ -35,7 +35,10 @@ public class SqlCRUD
         var detailedContact = new ContactInfoDetails();
 
         // 1)=> first we need to retreive the contact 
-        detailedContact.basicContactInfo = _dataAccess.LoadData<BasicContactInfo, dynamic>(sqlQuery, new { ContactID = id }, _connString).FirstOrDefault();
+        detailedContact.basicContactInfo = _dataAccess.LoadData<BasicContactInfo, dynamic>(
+            sqlQuery, 
+            new { ContactID = id }, 
+            _connString).FirstOrDefault();
 
         // update the query
         sqlQuery = @"SELECT E.EmailAddress 
@@ -45,7 +48,10 @@ public class SqlCRUD
                             WHERE CE.ContactId = @ContactID";
 
         // 2)=> then we need to retreive all the emails of this contact
-        detailedContact.Emails = _dataAccess.LoadData<EmailAddress, dynamic>(sqlQuery, new { ContactID = id }, _connString);
+        detailedContact.Emails = _dataAccess.LoadData<EmailAddress, dynamic>(
+            sqlQuery, 
+            new { ContactID = id }, 
+            _connString);
 
         // update the query
         sqlQuery = @"SELECT P.Phone
@@ -55,7 +61,10 @@ public class SqlCRUD
                             WHERE CP.ContactId = @ContactID";
 
         // 3)=> finally we need to retreive all the phone numbers of this contact
-        detailedContact.PhoneNumbers = _dataAccess.LoadData<PhoneNumber, dynamic>(sqlQuery, new { ContactID = id }, _connString);
+        detailedContact.PhoneNumbers = _dataAccess.LoadData<PhoneNumber, dynamic>(
+            sqlQuery, 
+            new { ContactID = id },
+            _connString);
 
         return detailedContact;
     }
@@ -140,6 +149,47 @@ public class SqlCRUD
                     _connString);
 
             }
+        }
+    }
+
+    // service method that update the contact basic info
+    public void UpdateContactBasicInfo(BasicContactInfo UpdatedContactInfo)
+    {
+        // define the sql query
+        var query = @"UPDATE dbo.Contacts SET FirstName=@FName, LastName=@LName WHERE Id=@Id;";
+
+        // execute it against the table
+        _dataAccess.SaveData<dynamic>(query, 
+            new {
+                FName = UpdatedContactInfo.FirstName, 
+                LName=UpdatedContactInfo.LastName, 
+                Id=UpdatedContactInfo.Id }, 
+            _connString);
+    }
+
+    // service method that takes contact id and the phone number id and remove the phone number from this contact
+    // => if this phone number is only assigned to this specific contact, so we will mark it as archieved in PhoneNumbers table because its not used by other contacts
+    // => if its linked iwth other contacts, we just remove the linked-entitiy in the link-table
+    public void DeleteContactPhoneNumber(int ContactId, int PhoneId)
+    {
+        // we first need to grap all the link-entities that this phone number is part of 
+        var query = @"SELECT Id, ContactId, PhoneNumberId FROM dbo.ContactsPhones WHERE PhoneNumberId=@PhoneId;";
+
+        // execute the query and return the result into the ContactPhone model
+        var queryResult = _dataAccess.LoadData<ContactPhone, dynamic>(query, new { PhoneId }, _connString);
+
+        // and if or if not we should delete the linked-entitiy between this phone number and this specific contact
+        query = @"DELETE FROM dbo.ContactsPhones WHERE ContactId=@ContactId AND PhoneNumberId=@PhoneId ;";
+        _dataAccess.SaveData<dynamic>(query, new {ContactId, PhoneId}, _connString);
+        
+        // if this queryResult list has more than one entry, that means that this phone number is assigned to more than one user, so we can't mark it as soft deleted
+        // => do nothing
+
+        // if not, so mark it as soft deleted
+        if(queryResult.Count == 1)
+        {
+            query = @"DELETE FROM dbo.PhoneNumbers WHERE Id=@PhoneId;";
+            _dataAccess.SaveData<dynamic>(query, new { PhoneId}, _connString);
         }
     }
 }
