@@ -1,6 +1,0 @@
-E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlContextDB\bin\Debug\SqlContactsDB.dacpac
-E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlContextDB\bin\Debug\SqlContextDB.dll
-E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlContextDB\bin\Debug\SqlContextDB.pdb
-E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlContextDB\obj\Debug\SqlContactsDB.sqlproj.AssemblyReference.cache
-E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlContextDB\obj\Debug\SqlContextDB.dll
-E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlContextDB\obj\Debug\SqlContextDB.pdb
