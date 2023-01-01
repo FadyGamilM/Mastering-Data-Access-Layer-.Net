@@ -1,0 +1,10 @@
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\bin\Debug\ContactsDBSchema.dacpac
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\bin\Debug\ContactsDBSchema.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\bin\Debug\ContactsDBSchema.pdb
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\ContactsDBSchema.sqlproj.AssemblyReference.cache
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\Model.xml
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\refactor.xml
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\postdeploy.sql
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\predeploy.sql
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\ContactsDBSchema.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\ContactsDBSchema\obj\Debug\ContactsDBSchema.pdb

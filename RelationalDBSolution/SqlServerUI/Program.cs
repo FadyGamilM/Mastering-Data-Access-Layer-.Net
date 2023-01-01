@@ -1,9 +1,12 @@
-﻿// a method that takes a connection string name as a paramter 
+﻿using DataAccessLibrary;
+using Microsoft.Extensions.Configuration;
+
+
+
+// a method that takes a connection string name as a paramter 
 // and fetch the connection string value from json file 
 // so later we can just replace the connectionStringName paramter 
 // to use another data source rather than the local Sql Server DB
-using Microsoft.Extensions.Configuration;
-
 string GetConnString (string connStringKey = "DefaultConnection")
 {
     // define the builder 
@@ -19,6 +22,33 @@ string GetConnString (string connStringKey = "DefaultConnection")
     return connStringValue;
 }
 
-// test the method
-var connString = GetConnString();
-Console.WriteLine(connString);
+// utilize the service layer into the application layer
+// to read the data we need an instance of the service layer [which is the SqlCRUD class]
+void ReadContactsInfo (SqlCRUD CrudService) // application layer method
+{
+    var rows = CrudService.GetAllContacts();
+    foreach(var row in rows)
+    {
+        Console.WriteLine($"{row.Id}, Name is {row.FirstName} {row.LastName}");
+    }
+}
+
+// given contact id, find all details of this contact
+void ReadContactDetails (SqlCRUD CrudService, int ContactId)
+{
+    var contactDetails = CrudService.GetContactDetailsByContactId(ContactId);
+    Console.WriteLine($"{contactDetails.basicContactInfo.Id}, Name is {contactDetails.basicContactInfo.FirstName} {contactDetails.basicContactInfo.LastName}");
+    foreach(var email in contactDetails.Emails)
+    {
+        Console.WriteLine($"{email.Email}");
+    }
+    foreach (var phoneNumber in contactDetails.PhoneNumbers)
+    {
+        Console.WriteLine($"{phoneNumber.Phone}");
+    }
+}
+
+// now use the application layer
+var sqlCrudService = new SqlCRUD(GetConnString());
+ReadContactsInfo(sqlCrudService);
+ReadContactDetails(sqlCrudService, 1);

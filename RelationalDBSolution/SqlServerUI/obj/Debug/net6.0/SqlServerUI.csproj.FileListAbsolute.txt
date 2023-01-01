@@ -26,3 +26,12 @@ E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-
 E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\obj\Debug\net6.0\SqlServerUI.pdb
 E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\obj\Debug\net6.0\SqlServerUI.genruntimeconfig.cache
 E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\obj\Debug\net6.0\ref\SqlServerUI.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\Dapper.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\System.Data.SqlClient.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\DataAccessLibrary.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\RelationalDBSolution\SqlServerUI\bin\Debug\net6.0\DataAccessLibrary.pdb
