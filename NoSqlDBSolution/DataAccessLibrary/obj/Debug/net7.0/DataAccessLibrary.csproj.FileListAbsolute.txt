@@ -1,0 +1,12 @@
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\bin\Debug\net7.0\DataAccessLibrary.deps.json
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\bin\Debug\net7.0\DataAccessLibrary.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\bin\Debug\net7.0\DataAccessLibrary.pdb
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.csproj.AssemblyReference.cache
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.AssemblyInfoInputs.cache
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.AssemblyInfo.cs
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\refint\DataAccessLibrary.dll
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\DataAccessLibrary.pdb
+E:\1- freelancing path\Practical Work After Courses\Mastering-Data-Access-Layer-.Net\NoSqlDBSolution\DataAccessLibrary\obj\Debug\net7.0\ref\DataAccessLibrary.dll

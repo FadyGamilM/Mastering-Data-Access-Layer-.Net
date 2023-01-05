@@ -1,3 +1,4 @@
+namespace DataAccessLibrary;
 using MongoDB.Bson;
 using MongoDB.Driver;
 public class MongoDataAccess
